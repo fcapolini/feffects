@@ -1,7 +1,5 @@
 # FEffects
 
-![Flash example](http://mromecki.fr/blog/post/24/chips.swf)
-
 FEffects is a library that enables you to create visual transitions like motion-tweens for example.
 
 The package contains a Tween class and Robert Penners' easings.
