@@ -6,8 +6,10 @@
 	import haxe.FastList;
 #end
 
-import flash.Lib;
-import flash.events.Event;
+#if !js
+	import flash.Lib;
+	import flash.events.Event;
+#end
 #if ( js ||flash8 )
 	import haxe.Timer;
 #end
@@ -51,7 +53,7 @@ class TweenObject {
 	public var properties	(default, null)			: Dynamic;
 	public var duration		(default, null)			: Int;
 	public var easing		(default, null)			: Easing;
-	public var isPlaying	(get_isPlaying, null)	: Bool;
+	public var isPlaying	(get, null)	: Bool;
 	function get_isPlaying() {
 		for ( tween in tweens ) {
 			if ( tween.isPlaying )
